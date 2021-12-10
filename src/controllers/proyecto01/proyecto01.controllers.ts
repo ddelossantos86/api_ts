@@ -52,6 +52,7 @@ export const postGuardar = async (req: Request, res: Response) => {
 
     console.log (req.body);
     const guardar = new buscador_bases (req.body);
+
     await guardar.save();
     console.log (guardar);
 
